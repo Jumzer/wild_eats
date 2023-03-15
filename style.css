@@ -2,30 +2,107 @@
   box-sizing: border-box;
 }
 
-nav {
+/* ---------------------- body ---------------------- */
+
+/* ---------------------- body ---------------------- */
+
+/* ---------------------- header ---------------------- */
+.navHeader {
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fbbc04;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #dddddd, #ffffff);
+  box-shadow: 5px 5px 10px #d8d8d8, -5px -5px 10px #ffffff;
 }
 
-ul {
+.navUl {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   text-decoration: none;
 }
 
-li {
+@media screen and (max-width: 767px) {
+  .navHeader {
+    justify-content: space-between;
+  }
+  .navUl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  .navButton {
+    padding: 8px 16px 8px 14px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .navLogo {
+    display: none;
+  }
+  .navHeader {
+    justify-content: space-around;
+  }
+}
+
+nav > ul {
+  padding: 0;
+}
+
+nav > ul > li {
   padding: 3px;
 }
 
-li a {
+nav > ul > li a {
   text-decoration: none;
   color: black;
 }
 
-img {
+.navLogo {
   width: 150px;
   height: 150px;
 }
+
+.navWordingImg {
+  width: 200px;
+  height: auto;
+}
+
+nav > ul > li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 8px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+nav > ul > li button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+nav > ul > li button:active {
+  box-shadow: none;
+}
+
+/* ---------------------- header ---------------------- */
