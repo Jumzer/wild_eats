@@ -1,28 +1,8 @@
 /* Début section 1 : barre de recherche + bannière*/
 
-@media screen {
-    .banner {
-        /* max-height: 330px; */
-        /* min-height: 75px; */
-        /* max-width: 1250px;
-        min-width: 200px; */
-    }
-}
-
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
-
-
-/* @media screen and (min-width:361px) {
-    .banner {
-        display: none;
-    }
-
-    div.searchBarAndBanner {
-        background-image: url(banniereWildEats.png);
-    }
-} */
 
 @media screen and (max-width: 360px) {
     input.searchBar {
@@ -30,14 +10,33 @@
         background-size: cover;
     }
 
-
-    div.searchBarLoupe {
-        max-height: 1em;
+    .searchBarAndBanner>div:first-child {
+        margin-bottom: 1em;
     }
+}
 
-    img.loupe {
-        height: 0.7em;
+@media screen and (max-width: 360px) {
+    .searchBarDeux {
+        display: none;
     }
+}
+
+@media screen and (min-width: 360px) {
+    .parent2 {
+        display: none;
+    }
+}
+
+div.searchBarLoupe {
+    max-height: 1em;
+}
+
+img.loupe {
+    height: 0.7em;
+}
+
+.firstbar {
+    display: none;
 }
 
 .searchBarAndBanner {
@@ -52,16 +51,14 @@
     min-height: 1em;
     max-height: 1.5em;
     display: flex;
-    align-items: center;
-    /* text-align: center; */
     margin: 0% 30%;
     border: 0.063em solid lightgrey;
     border-radius: 3em;
     padding-left: 1em;
     padding-right: 0.5em;
     margin-bottom: 0.5em;
-    box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25), 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
-
+    box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25),
+        0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 .searchBar {
@@ -103,8 +100,17 @@ button {
 .banner {
     width: 70%;
     margin: 0.188em auto;
+}
 
+.parent {
+    position: relative;
+}
 
+.searchBarDeux {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 70%;
 }
 
 /* Fin section 1 : barre de recherche + bannière*/
