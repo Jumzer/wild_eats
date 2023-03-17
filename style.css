@@ -1,3 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------- body ---------------------- */
+
+/* ---------------------- body ---------------------- */
+
+/* ---------------------- header ---------------------- */
+.navHeader {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #dddddd, #ffffff);
+  box-shadow: 5px 5px 10px #d8d8d8, -5px -5px 10px #ffffff;
+}
+
+.navUl {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navHeader {
+    justify-content: space-between;
+  }
+  .navUl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  .navButton {
+    padding: 8px 16px 8px 14px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .navLogo {
+    display: none;
+  }
+  .navHeader {
+    justify-content: space-around;
+  }
+}
+
+nav > ul {
+  padding: 0;
+}
+
+nav > ul > li {
+  padding: 3px;
+}
+
+nav > ul > li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navLogo {
+  width: 150px;
+  height: 150px;
+}
+
+.navWordingImg {
+  width: 200px;
+  height: auto;
+}
+
+nav > ul > li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 8px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+nav > ul > li button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+nav > ul > li button:active {
+  box-shadow: none;
+}
+
+/* ---------------------- header ---------------------- */
+
+/* ---------------------- banner ---------------------- */
+
+@media screen and (max-width: 360px) {
+    input.searchBar {
+        font-size: 8px;
+        background-size: cover;
+    }
+
+    .searchBarAndBanner>div:first-child {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .searchBarDeux {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 361px) {
+    .parentSearchBar2 {
+        display: none;
+    }
+}
+
+div.searchBarLoup {
+    max-height: 1em;
+    background-color: white;
+}
+
+img.loup {
+    height: 0.7em;
+}
+
+.firstbar {
+    display: none;
+}
+
+.searchBarAndBanner {
+    width: 70%;
+    height: 40%;
+    margin: auto auto;
+    text-align: center;
+}
+
+.searchBarLoup {
+    height: 5vh;
+    min-height: 1em;
+    max-height: 1.5em;
+    display: flex;
+    margin: 0% 30%;
+    border: 0.063em solid lightgrey;
+    border-radius: 3em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+    box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25),
+        0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+.searchBar {
+    margin: 0;
+    width: 95%;
+    border-radius: 2.813em;
+    height: 100%;
+    font-size: 70%;
+    color: gray;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 0.188em;
+    padding-left: 0.5em;
+}
+
+input::placeholder {
+    color: lightgrey;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    display: flex;
+    padding: 0;
+    background-color: white;
+    border: none;
+    height: 100%;
+}
+
+.loup {
+    height: 1em;
+    margin: auto 0;
+    text-align: center;
+}
+
+.banner {
+    width: 70%;
+    margin: 0.188em auto;
+}
+
+.parentSearchBar1 {
+    position: relative;
+}
+
+.searchBarDeux {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 70%;
+}
+
+/* ---------------------- banner ---------------------- */
+
+/* ---------------------- cards ---------------------- */
+
 .cardSection {
     display: flex;
     flex-wrap: wrap;
@@ -62,8 +287,6 @@ div > img {
     overflow: hidden;
   }
   
-  
-  
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
   body { margin: 50px; text-align: center; font-family: 'Open Sans', sans-serif; background: #f2fbff; font-size: .6em;}
   
@@ -73,5 +296,5 @@ div > img {
         grid-template-columns: 1fr 1fr;
     }
 }
-    
-  
+
+/* ---------------------- cards ---------------------- */
