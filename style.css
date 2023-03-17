@@ -29,6 +29,7 @@
 
 div.searchBarLoupe {
     max-height: 1em;
+    background-color: white;
 }
 
 img.loupe {
