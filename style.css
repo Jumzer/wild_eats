@@ -21,13 +21,13 @@
     }
 }
 
-@media screen and (min-width: 360px) {
-    .parent2 {
+@media screen and (min-width: 361px) {
+    .parentSearchBar2 {
         display: none;
     }
 }
 
-div.searchBarLoupe {
+div.searchBarLoup {
     max-height: 1em;
     background-color: white;
 }
@@ -47,7 +47,7 @@ img.loup {
     text-align: center;
 }
 
-.searchBarLoupe {
+.searchBarLoup {
     height: 5vh;
     min-height: 1em;
     max-height: 1.5em;
@@ -103,7 +103,7 @@ button {
     margin: 0.188em auto;
 }
 
-.parent {
+.parentSearchBar1 {
     position: relative;
 }
 
