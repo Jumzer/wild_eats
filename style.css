@@ -151,22 +151,25 @@ nav > ul > li button:active {
 }
 
 div.searchBarLoup {
-    max-height: 3.5em;
+
+    max-height: 1em;
+
     background-color: white;
 }
 
 img.loup {
-    height: 1.5em;
+
+    height: 0.7em;
 
 }
 
 .firstbar {
-  display: none;
+    display: none;
 }
 
 .searchBarAndBanner {
 
-    width: 100%;
+    width: 70%;
     height: 40%;
     margin: auto auto;
     text-align: center;
@@ -178,7 +181,9 @@ img.loup {
     min-height: 1em;
     max-height: 1.5em;
     display: flex;
-    margin: 0% 25%;
+
+    margin: 0% 30%;
+
     border: 0.063em solid lightgrey;
     border-radius: 3em;
     padding-left: 1em;
@@ -189,65 +194,63 @@ img.loup {
 
 }
 
-button {
-    border-radius: 3em;
-}
-
 .searchBar {
 
     margin: 0;
     width: 95%;
     border-radius: 2.813em;
     height: 100%;
-    font-size: 200%;
+
+    font-size: 70%;
+
     color: gray;
     border: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-radius: 1em;
+
+    border-radius: 0.188em;
     padding-left: 0.5em;
 
 }
 
 input::placeholder {
-  color: lightgrey;
+    color: lightgrey;
 }
 
 input:focus {
-  outline: none;
+    outline: none;
 }
 
 button {
-  display: flex;
-  padding: 0;
-  background-color: white;
-  border: none;
-  height: 100%;
+    display: flex;
+    padding: 0;
+    background-color: white;
+    border: none;
+    height: 100%;
 }
 
 .loup {
-  height: 1em;
-  margin: auto 0;
-  text-align: center;
+    height: 1em;
+    margin: auto 0;
+    text-align: center;
 }
 
 .banner {
 
-    width: 90%;
-    max-height: 300px;
+    width: 70%;
     margin: 0.188em auto;
 
 }
 
 .parentSearchBar1 {
-  position: relative;
+    position: relative;
 }
 
 .searchBarDeux {
-  position: absolute;
-  margin-left: 15%;
-  margin-top: 10%;
-  width: 70%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 70%;
 }
 
 
@@ -277,7 +280,7 @@ button {
     list-style-type: none;
 }
 
-li a {
+li {
     text-decoration: none;
     color: black;
 }
@@ -327,7 +330,7 @@ li a {
     align-items: center;
 }
 
-.sous-menu>li>a {
+.sous-menu>li {
     height: 2rem;
     width: 90%;
     align-items: center;
@@ -399,6 +402,7 @@ li a {
 
 .cardSection {
 
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -411,6 +415,7 @@ li a {
     transition: 0.3s;
     margin: 10px;
     border-radius: 10px;
+
 
 }
 
@@ -433,6 +438,7 @@ div>img {
 }
 
 .star-ratings-css {
+
 
     unicode-bidi: bidi-override;
     color: #c5c5c5;
@@ -483,7 +489,7 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
+
 }
 
 /* ---------------------- cards ---------------------- */
-
