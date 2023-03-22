@@ -25,32 +25,25 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
-    .navHeader {
-        justify-content: space-between;
-    }
 
-    .navUl {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-right: 10px;
-    }
+@media screen and (max-width: 834px) {
+  .navHeader {
+    justify-content: center;
+  }
+  .navUl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  .navButton {
+    padding: 8px 16px 8px 14px;
+    font-size: 10px;
+  }
+  .navLogo {
+    display: none;
+  }
 
-    .navButton {
-        padding: 8px 16px 8px 14px;
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .navLogo {
-        display: none;
-    }
-
-    .navHeader {
-        justify-content: space-around;
-    }
 }
 
 nav>ul {
@@ -72,56 +65,53 @@ nav>ul>li a {
 }
 
 .navWordingImg {
-    width: 200px;
-    height: auto;
+  width: 10rem;
+  max-width: 400px;
+  height: auto;
+  flex: 1;
 }
 
-nav>ul>li button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    color: #7e97b8;
-    background-color: #e0e8ef;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: rgba(255, 255, 255, 0.333);
-    border-radius: 40px 40px 40px 40px;
-    padding: 8px;
-    transform: translate(0px, 0px) rotate(0deg);
-    transition: 0.2s;
-    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+nav > ul > li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 8px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
 }
 
-nav>ul>li button:hover {
-    color: #516d91;
-    background-color: #e5edf5;
-    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+nav > ul > li button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
 }
 
-nav>ul>li button:active {
-    box-shadow: none;
+nav > ul > li button:active {
+  box-shadow: none;
+
 }
 
 /* ---------------------- header ---------------------- */
 
 /* ---------------------- banner ---------------------- */
 
-@media screen {
-    img.banner {
-        min-width: 250px;
-    }
-}
-
 
 @media screen and (max-width: 490px) {
     input.searchBar {
-        font-size: 7px;
+        font-size: 9px;
         background-size: cover;
     }
 
@@ -131,7 +121,7 @@ nav>ul>li button:active {
     }
 
     .searchBarAndBanner>div:first-child {
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -144,12 +134,16 @@ nav>ul>li button:active {
         max-height: 1em;
         background-color: white;
     }
+
+
 }
 
 @media screen and (min-width: 491px) {
     .parentSearchBar2 {
         display: none;
     }
+
+
 }
 
 .bannerSection {
@@ -157,12 +151,16 @@ nav>ul>li button:active {
 }
 
 div.searchBarLoup {
+
     max-height: 1em;
+
     background-color: white;
 }
 
 img.loup {
+
     height: 0.7em;
+
 }
 
 .firstbar {
@@ -170,10 +168,12 @@ img.loup {
 }
 
 .searchBarAndBanner {
+
     width: 70%;
     height: 40%;
     margin: auto auto;
     text-align: center;
+
 }
 
 .searchBarLoup {
@@ -181,7 +181,9 @@ img.loup {
     min-height: 1em;
     max-height: 1.5em;
     display: flex;
+
     margin: 0% 30%;
+
     border: 0.063em solid lightgrey;
     border-radius: 3em;
     padding-left: 1em;
@@ -189,20 +191,26 @@ img.loup {
     margin-bottom: 0.5em;
     box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25),
         0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+
 }
 
 .searchBar {
+
     margin: 0;
     width: 95%;
     border-radius: 2.813em;
     height: 100%;
+
     font-size: 70%;
+
     color: gray;
     border: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+
     border-radius: 0.188em;
     padding-left: 0.5em;
+
 }
 
 input::placeholder {
@@ -228,8 +236,10 @@ button {
 }
 
 .banner {
+
     width: 70%;
     margin: 0.188em auto;
+
 }
 
 .parentSearchBar1 {
@@ -242,6 +252,7 @@ button {
     margin-top: 10%;
     width: 70%;
 }
+
 
 /* ---------------------- banner ---------------------- */
 
@@ -390,6 +401,8 @@ li {
 /* ---------------------- cards ---------------------- */
 
 .cardSection {
+
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -402,11 +415,15 @@ li {
     transition: 0.3s;
     margin: 10px;
     border-radius: 10px;
+
+
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
+
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 /* Add some padding inside the card container */
@@ -421,6 +438,8 @@ div>img {
 }
 
 .star-ratings-css {
+
+
     unicode-bidi: bidi-override;
     color: #c5c5c5;
     font-size: 25px;
@@ -469,6 +488,8 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+
 }
 
 /* ---------------------- cards ---------------------- */
