@@ -1,5 +1,9 @@
-const scrollingMenu = document.querySelectorAll('.scrolling_menu');
+//------------Scrolling-Menu--------------------
 
+const scrollingMenu = document.querySelectorAll('.scrolling_menu');
+const scrollingMenuTitle = document.querySelectorAll('.scrolling_menu_title');
+
+// récuperer les éléments des sous-menu (getElement )
 const sousMenu = document.querySelectorAll('.sous-menu');
 
 for (let i = 0; i < scrollingMenu.length; i++) {
@@ -11,3 +15,14 @@ for (let i = 0; i < scrollingMenu.length; i++) {
         }
     })
 }
+
+function updateTitle(balise, texte) {
+    // console.log(balise);
+    const target = document.getElementById(balise);
+    // console.log(target);
+    target.innerText = texte
+}
+
+
+// BUDGET = SCROLLING_MENU a
+// VEGGIE = SOUS-MENU a
