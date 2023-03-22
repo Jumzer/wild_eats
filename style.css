@@ -1,10 +1,10 @@
+:root {
+    --hauteur-menu: 100px;
+}
+
 * {
     box-sizing: border-box;
 }
-
-/* ---------------------- body ---------------------- */
-
-/* ---------------------- body ---------------------- */
 
 /* ---------------------- header ---------------------- */
 .navHeader {
@@ -250,6 +250,148 @@ button {
 
 /* ---------------------- banner ---------------------- */
 
+/* ---------------------- scrolling-menu ---------------------- */
+
+.selectors {
+    width: 70%;
+    font-size: 16px;
+    margin: auto;
+}
+
+.selectors>ul {
+    display: flex;
+    text-align: center;
+    height: var(--hauteur-menu);
+    align-items: center;
+    justify-content: center;
+}
+
+.selectors_menu {
+    gap: 10%;
+}
+
+.selectors ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.selectors>ul>li {
+    flex: 1;
+    box-shadow: inset -27px -27px 54px #7ED957,
+        inset 27px 27px 54px #ffffff;
+}
+
+.sous-menu {
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: none;
+}
+
+.scrolling_menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 30%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.scrolling_menu img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+}
+
+.scrolling_menu_title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 0.5em;
+}
+
+.chevron {
+    grid-column-start: 4;
+    font-size: .6em;
+    align-items: center;
+}
+
+.sous-menu>li>a {
+    height: 2rem;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    box-shadow: inset -27px -27px 54px #7ED957,
+        inset 27px 27px 54px #ffffff;
+}
+
+.sous-menu>li {
+    padding-top: 0.15rem;
+}
+
+@media screen and (min-width:768px) and (max-width: 844px) {
+
+    .scrolling_menu_title {
+        font-size: 1.1rem;
+    }
+
+    .scrolling_menu {
+        height: 50%;
+    }
+
+    .scrolling_menu img {
+        height: 70%;
+    }
+
+    .sous-menu>li>a {
+        font-size: 1.1rem;
+        height: 3.5rem;
+    }
+
+    .chevron {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:845px) {
+
+    .scrolling_menu_title {
+        font-size: 1.4rem;
+    }
+
+    .scrolling_menu {
+        height: 80%;
+    }
+
+    .scrolling_menu img {
+        height: 80%;
+    }
+
+    .sous-menu>li>a {
+        font-size: 1.4rem;
+        height: 5rem;
+    }
+
+    .chevron {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* ---------------------- scrolling-menu ---------------------- */
+
+
 /* ---------------------- cards ---------------------- */
 
 .cardSection {
@@ -335,3 +477,4 @@ body {
 }
 
 /* ---------------------- cards ---------------------- */
+
