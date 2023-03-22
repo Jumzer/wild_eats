@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wild Eats</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Eats</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -53,41 +53,42 @@
     <div class="searchBarDeux"></div>
   </section>
 
-<!-- Section 2 : critères -->
+  <!-- Section 2 : critères -->
   <div class="selectors">
     <ul class="selectors_menu">
       <li class="scrolling_menu">
-        <img src="./images/sigle_euro.png" alt="euro_icon">
-        <a href="#" class="scrolling_menu_title">Budget</a>
-        <a href="#" class="chevron">❯</a>
+        <img src="./assets/sigle_euro.png" alt="euro_icon">
+        <p class="scrolling_menu_title" id="budget">Budget</p>
+        <p class="chevron">❯</p>
         <ul class="sous-menu">
-          <li><a href="#">Moins de 10 €</a></li>
-          <li><a href="#">Entre 10 et 20 €</a></li>
-          <li><a href="#">Plus de 20 €</a></li>
+          <li class="food-price" onclick="updateTitle('budget', 'Moins de 10 €')">Moins de 10 €</li>
+          <li class="food-price" onclick="updateTitle('budget', 'Entre 10 et 20 €')">Entre 10 et 20 €</li>
+          <li class="food-price" onclick="updateTitle('budget', 'Plus de 20 €')">Plus de 20 €</li>
         </ul>
       </li>
       <li class="scrolling_menu">
-        <img src="./images/sigle_carotte.png" alt="veggie_icon">
-        <a href="#" class="scrolling_menu_title">Regime</a>
-        <a href="#" class="chevron">❯</a>
+        <img src="./assets/sigle_carotte.png" alt="veggie_icon">
+        <p class="scrolling_menu_title" id="regime">Régime</p>
+        <p class="chevron">❯</p>
         <ul class="sous-menu">
-          <li><a href="#">Vegan</a></li>
-          <li><a href="#">Viandard</a></li>
-          <li><a href="#">Gluten-free</a></li>
+          <li class="food-type" onclick="updateTitle('regime', 'Vegan')">Vegan</li>
+          <li class="food-type" onclick="updateTitle('regime', 'Viandard')">Viandard</li>
+          <li class="food-type" onclick="updateTitle('regime', 'Gluten-free')">Gluten-free</li>
         </ul>
       </li>
       <li class="scrolling_menu">
-        <img src="./images/sigle_couverts (1).png" alt="fork_and_knife_icon">
-        <a href="#" class="scrolling_menu_title">Style</a>
-        <a href="#" class="chevron">❯</a>
+        <img src="./assets/sigle_couverts.png" alt="fork_and_knife_icon">
+        <p class="scrolling_menu_title" id="style">Style</p>
+        <p class="chevron">❯</p>
         <ul class="sous-menu">
-          <li><a href="#">Italien</a></li>
-          <li><a href="#">Japonais</a></li>
-          <li><a href="#">Junk-food</a></li>
+          <li class="food-country" onclick="updateTitle('style', 'Italien')">Italien</li>
+          <li class="food-country" onclick="updateTitle('style', 'Japonais')">Japonais</li>
+          <li class="food-country" onclick="updateTitle('style', 'Junk-food')">Junk-food</li>
         </ul>
       </li>
     </ul>
   </div>
+
 
   <!-- Section 3 : cards -->
 
@@ -127,6 +128,7 @@
         <p>Architect & Engineer</p>
         <div class="star-ratings-css" title=".500"></div>
       </div>
+
     </div>
 
     <div class="card">
@@ -147,12 +149,11 @@
       </div>
     </div>
 
+
   </section>
 
   <!-- Section 4 : footer -->
 
   <script src="./script.js"></script>
 </body>
-
 </html>
-
