@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Eats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wild Eats</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- Header -->
+    <nav class="navHeader">
+      <img
+        src="/assets/Logo_ss_txt_2.png"
+        alt="logo Wild Eats"
+        class="navLogo"
+      />
+      <img
+        src="/assets/Logo_2_ecriture.png"
+        alt="Wild Eats Wording"
+        class="navWordingImg"
+      />
+      <ul class="navUl">
+        <li><button class="navButton">Home</button></li>
+        <li><button class="navButton">News</button></li>
+        <li><button class="navButton">Contact</button></li>
+        <li><button class="navButton">About</button></li>
+      </ul>
+    </nav>
 
-<body>
-  <!-- Header -->
-  <nav class="navHeader">
-    <img src="/assets/Logo_ss_txt_2.png" alt="logo Wild Eats" class="navLogo" />
-    <img src="/assets/Logo_2_ecriture.png" alt="Wild Eats Wording" class="navWordingImg" />
-    <ul class="navUl">
-      <li><button class="navButton">Home</button></li>
-      <li><button class="navButton">News</button></li>
-      <li><button class="navButton">Contact</button></li>
-      <li><button class="navButton">About</button></li>
-    </ul>
-  </nav>
-
-  <!-- Section 1 : bannière -->
-  <section class="bannerSection">
-    <div class="searchBarAndBanner">
-      <div class="parentSearchBar2">
-        <div class="searchBarLoup">
-          <button type="button">
-            <img src="assets/loupe16px.png" alt="" class="loup" />
-          </button>
-          <input class="searchBar" placeholder="Trouve ton bonheur" type="text" />
-        </div>
-      </div>
-      <div class="parentSearchBar1">
-        <div class="searchBarDeux">
+    <!-- Section 1 : bannière -->
+    <section class="bannerSection">
+      <div class="searchBarAndBanner">
+        <div class="parentSearchBar2">
           <div class="searchBarLoup">
             <button type="button">
-              <img src="/assets/loupe16px.png" alt="" class="loup" />
+              <img src="assets/loupe16px.png" alt="" class="loup" />
             </button>
-            <input class="searchBar" placeholder="Trouve ton bonheur" type="text" />
+            <input
+              class="searchBar"
+              placeholder="Trouve ton bonheur"
+              type="text"
+            />
           </div>
         </div>
         <picture>
@@ -53,107 +55,138 @@
     <div class="searchBarDeux"></div>
   </section>
 
-  <!-- Section 2 : critères -->
-  <div class="selectors">
-    <ul class="selectors_menu">
-      <li class="scrolling_menu">
-        <img src="./assets/sigle_euro.png" alt="euro_icon">
-        <p class="scrolling_menu_title" id="budget">Budget</p>
-        <p class="chevron">❯</p>
-        <ul class="sous-menu">
-          <li class="food-price" onclick="updateTitle('budget', '- de 10 €')">- de 10 €</li>
-          <li class="food-price" onclick="updateTitle('budget', '10 - 20 €')">10 - 20 €</li>
-          <li class="food-price" onclick="updateTitle('budget', '20 € et +')">20 € et +</li>
-        </ul>
-      </li>
-      <li class="scrolling_menu">
-        <img src="./assets/sigle_carotte.png" alt="veggie_icon">
-        <p class="scrolling_menu_title" id="regime">Régime</p>
-        <p class="chevron">❯</p>
-        <ul class="sous-menu">
-          <li class="food-type" onclick="updateTitle('regime', 'Vegan')">Vegan</li>
-          <li class="food-type" onclick="updateTitle('regime', 'Viandard')">Viandard</li>
-          <li class="food-type" onclick="updateTitle('regime', 'Gluten-free')">Gluten-free</li>
-        </ul>
-      </li>
-      <li class="scrolling_menu">
-        <img src="./assets/sigle_couverts.png" alt="fork_and_knife_icon">
-        <p class="scrolling_menu_title" id="style">Style</p>
-        <p class="chevron">❯</p>
-        <ul class="sous-menu">
-          <li class="food-country" onclick="updateTitle('style', 'Italien')">Italien</li>
-          <li class="food-country" onclick="updateTitle('style', 'Japonais')">Japonais</li>
-          <li class="food-country" onclick="updateTitle('style', 'Junk-food')">Junk-food</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-
-  <!-- Section 3 : cards -->
-
-  <section class="cardSection">
-
-    <div class="card">
-      <img src="/assets/fastfood.jpg" alt="fastfood" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-        <div class="star-ratings-css" title=".125"></div>
-      </div>
+      <!-- Section 2 : critères -->
+    <div class="selectors">
+      <ul class="selectors_menu">
+        <li class="scrolling_menu">
+          <img src="./assets/sigle_euro.png" alt="euro_icon" />
+          <p class="scrolling_menu_title" id="budget">Budget</p>
+          <p class="chevron">❯</p>
+          <ul class="sous-menu">
+            <li
+              class="food-price"
+              onclick="updateTitle('budget', ' - de 10 €')"
+              value="1"
+            >
+              - de 10 €
+            </li>
+            <li
+              class="food-price"
+              onclick="updateTitle('budget', '10 - 20 €')"
+              value="2"
+            >
+              10 - 20 €
+            </li>
+            <li
+              class="food-price"
+              onclick="updateTitle('budget', '20 € et +')"
+              value="3"
+            >
+              20 € et +
+            </li>
+          </ul>
+        </li>
+        <li class="scrolling_menu">
+          <img src="./assets/sigle_carotte.png" alt="veggie_icon" />
+          <p class="scrolling_menu_title" id="regime">Régime</p>
+          <p class="chevron">❯</p>
+          <ul class="sous-menu">
+            <li class="food-type" onclick="updateTitle('regime', 'Vegan')">
+              Vegan
+            </li>
+            <li class="food-type" onclick="updateTitle('regime', 'Carné')">
+              Carné
+            </li>
+            <li
+              class="food-type"
+              onclick="updateTitle('regime', 'Gluten-free')"
+            >
+              Gluten-free
+            </li>
+          </ul>
+        </li>
+        <li class="scrolling_menu">
+          <img src="./assets/sigle_couverts.png" alt="fork_and_knife_icon" />
+          <p class="scrolling_menu_title" id="style">Style</p>
+          <p class="chevron">❯</p>
+          <ul class="sous-menu">
+            <li class="food-country" onclick="updateTitle('style', 'Italien')">
+              Italien
+            </li>
+            <li class="food-country" onclick="updateTitle('style', 'Japonais')">
+              Japonais
+            </li>
+            <li
+              class="food-country"
+              onclick="updateTitle('style', 'Junk-food')"
+            >
+              Junk-food
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
-    <div class="card">
-      <img src="/assets/italien.jpg" alt="italianfood" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-        <div class="star-ratings-css" title=".125"></div>
-      </div>
-    </div>
+    <!-- Section 3 : cards -->
 
-    <div class="card">
-      <img src="assets/steakhouse.jpg" alt="meatfood" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-        <div class="star-ratings-css" title=".850"></div>
-      </div>
-    </div>
+    <section class="cardSection" id="cardSection">
+      <!-- <div class="card">
+        <img src="/assets/fastfood.jpg" alt="fastfood" style="width: 100%" />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <div class="star-ratings-css" title=".125"></div>
+        </div> -->
+      <!-- </div> -->
 
-    <div class="card">
-      <img src="assets/veggie.jpg" alt="veggie" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-        <div class="star-ratings-css" title=".500"></div>
+      <!-- <div class="card">
+        <img src="/assets/italien.jpg" alt="italianfood" style="width: 100%" />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <div class="star-ratings-css" title=".125"></div>
+        </div>
       </div>
 
-    </div>
-
-    <div class="card">
-      <img src="assets/powke.jpg" alt="powke" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-        <div class="star-ratings-css" title=".620"></div>
+      <div class="card">
+        <img src="assets/steakhouse.jpg" alt="meatfood" style="width: 100%" />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <div class="star-ratings-css" title=".850"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="assets/spaghetti.jpg" alt="spaghetti" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-        <div class="star-ratings-css" title=".375"></div>
+      <div class="card">
+        <img src="assets/veggie.jpg" alt="veggie" style="width: 100%" />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <div class="star-ratings-css" title=".500"></div>
+        </div>
       </div>
-    </div>
 
+      <div class="card">
+        <img src="assets/powke.jpg" alt="powke" style="width: 100%" />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <div class="star-ratings-css" title=".620"></div>
+        </div>
+      </div>
 
-  </section>
+      <div class="card">
+        <img src="assets/spaghetti.jpg" alt="spaghetti" style="width: 100%" />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <div class="star-ratings-css" title=".375"></div>
+        </div>
+      </div> -->
+    </section>
 
-  <!-- Section 4 : footer -->
-
-  <script src="./script.js"></script>
-</body>
+    <!-- Section 4 : footer -->
+    <script src="/data.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
