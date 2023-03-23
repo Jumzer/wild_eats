@@ -1,5 +1,5 @@
 :root {
-    --hauteur-menu: 100px;
+    --hauteur-menu: 10%;
 }
 
 * {
@@ -27,22 +27,25 @@
 
 
 @media screen and (max-width: 834px) {
-  .navHeader {
-    justify-content: center;
-  }
-  .navUl {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 10px;
-  }
-  .navButton {
-    padding: 8px 16px 8px 14px;
-    font-size: 10px;
-  }
-  .navLogo {
-    display: none;
-  }
+    .navHeader {
+        justify-content: center;
+    }
+
+    .navUl {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 10px;
+    }
+
+    .navButton {
+        padding: 8px 16px 8px 14px;
+        font-size: 10px;
+    }
+
+    .navLogo {
+        display: none;
+    }
 
 }
 
@@ -65,42 +68,42 @@ nav>ul>li a {
 }
 
 .navWordingImg {
-  width: 10rem;
-  max-width: 400px;
-  height: auto;
-  flex: 1;
+    width: 10rem;
+    max-width: 400px;
+    height: auto;
+    flex: 1;
 }
 
-nav > ul > li button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  color: #7e97b8;
-  background-color: #e0e8ef;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-color: rgba(255, 255, 255, 0.333);
-  border-radius: 40px 40px 40px 40px;
-  padding: 8px;
-  transform: translate(0px, 0px) rotate(0deg);
-  transition: 0.2s;
-  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+nav>ul>li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 8px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
 }
 
-nav > ul > li button:hover {
-  color: #516d91;
-  background-color: #e5edf5;
-  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+nav>ul>li button:hover {
+    color: #516d91;
+    background-color: #e5edf5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
 }
 
-nav > ul > li button:active {
-  box-shadow: none;
+nav>ul>li button:active {
+    box-shadow: none;
 
 }
 
@@ -108,132 +111,132 @@ nav > ul > li button:active {
 
 /* ---------------------- banner ---------------------- */
 @media screen and (max-width: 490px) {
-  input.searchBar {
-    font-size: 9px;
-    background-size: cover;
-  }
+    input.searchBar {
+        font-size: 9px;
+        background-size: cover;
+    }
 
-  .searchBarLoup {
-    min-height: 20px;
-    min-width: 100px;
-  }
+    .searchBarLoup {
+        min-height: 20px;
+        min-width: 100px;
+    }
 
-  .searchBarAndBanner > div:first-child {
-    margin-bottom: 0.5em;
-  }
+    .searchBarAndBanner>div:first-child {
+        margin-bottom: 0.5em;
+    }
 }
 
 @media screen and (max-width: 490px) {
-  .searchBarDeux {
-    display: none;
-  }
+    .searchBarDeux {
+        display: none;
+    }
 
-  div.searchBarLoup {
-    max-height: 1em;
-    background-color: white;
-  }
+    div.searchBarLoup {
+        max-height: 1em;
+        background-color: white;
+    }
 }
 
 @media screen and (min-width: 491px) {
-  .parentSearchBar2 {
-    display: none;
-  }
+    .parentSearchBar2 {
+        display: none;
+    }
 }
 
 .bannerSection {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
 div.searchBarLoup {
-  max-height: 3.5em;
-  background-color: white;
+    max-height: 3.5em;
+    background-color: white;
 }
 
 img.loup {
-  height: 1.5em;
+    height: 1.5em;
 }
 
 .firstbar {
-  display: none;
+    display: none;
 }
 
 .searchBarAndBanner {
-  width: 100%;
-  height: 40%;
-  margin: auto auto;
-  text-align: center;
+    width: 100%;
+    height: 40%;
+    margin: auto auto;
+    text-align: center;
 }
 
 .searchBarLoup {
-  height: 5vh;
-  min-height: 1em;
-  max-height: 1.5em;
-  display: flex;
-  margin: 0% 25%;
-  border: 0.063em solid lightgrey;
-  border-radius: 3em;
-  padding-left: 1em;
-  padding-right: 0.5em;
-  margin-bottom: 0.5em;
-  box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25),
-    0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    height: 5vh;
+    min-height: 1em;
+    max-height: 1.5em;
+    display: flex;
+    margin: 0% 25%;
+    border: 0.063em solid lightgrey;
+    border-radius: 3em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+    box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25),
+        0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 button {
-  border-radius: 3em;
+    border-radius: 3em;
 }
 
 .searchBar {
-  margin: 0;
-  width: 95%;
-  border-radius: 2.813em;
-  height: 100%;
-  font-size: 200%;
-  color: gray;
-  border: none;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-radius: 1em;
-  padding-left: 0.5em;
+    margin: 0;
+    width: 95%;
+    border-radius: 2.813em;
+    height: 100%;
+    font-size: 200%;
+    color: gray;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 1em;
+    padding-left: 0.5em;
 }
 
 input::placeholder {
-  color: lightgrey;
+    color: lightgrey;
 }
 
 input:focus {
-  outline: none;
+    outline: none;
 }
 
 button {
-  display: flex;
-  padding: 0;
-  background-color: white;
-  border: none;
-  height: 100%;
+    display: flex;
+    padding: 0;
+    background-color: white;
+    border: none;
+    height: 100%;
 }
 
 .loup {
-  height: 1em;
-  margin: auto 0;
-  text-align: center;
+    height: 1em;
+    margin: auto 0;
+    text-align: center;
 }
 
 .banner {
-  width: 90%;
-  max-height: 300px;
-  margin: 0.188em auto;
+    width: 90%;
+    max-height: 300px;
+    margin: 0.188em auto;
 }
 
 .parentSearchBar1 {
-  position: relative;
+    position: relative;
 }
 
 .searchBarDeux {
-  position: absolute;
-  margin-left: 15%;
-  margin-top: 10%;
-  width: 70%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 70%;
 }
 
 
