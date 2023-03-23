@@ -22,12 +22,14 @@ function updateTitle(balise, texte) {
   // console.log(target);
   target.innerText = texte;
 }
+let searchValue = '';
+
 
 //------------Cards--------------------
 
 let selectValue = "1";
 
-const restaurant = restaurantList[0];
+// const restaurant = restaurantList[0];
 const restaurants = restaurantList;
 
 const section = document.getElementById("cardSection");
@@ -48,9 +50,13 @@ const createCard = (restaurant) => {
 };
 
 const render = () => {
+  console.log('hello');
   section.innerHTML = "";
   restaurants.forEach((restaurant) => {
-    if (selectValue === restaurant.foodPrice || selectValue === "1") {
+    if ((selectValue === restaurant.foodPrice || selectValue === "1") &&
+      // (ce qu'écrit l'utilisateur dans la barre de recherche est compris dans les lettres du nom du restaurant)) 
+      (restaurant.name.includes(searchValue))) {
+
       createCard(restaurant);
     }
   });
@@ -62,3 +68,11 @@ function filter() {
   selectValue = document.getElementsByClassName("food-price").value;
   render();
 }
+
+
+//------------SearchBar--------------------
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', (event) => {
+  searchValue = event.target.value;
+  render();
+});
