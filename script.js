@@ -57,15 +57,10 @@ const render = () => {
   section.innerHTML = "";
   restaurants.forEach((restaurant) => {
 
-    if ((restaurant.foodPrice === priceValue || priceValue === "All") && (restaurant.regim === regimValue || regimValue === "All") && (restaurant.style === styleValue || styleValue === "All"))
-
-    if ((selectValue === restaurant.foodPrice || selectValue === "1") &&
-      // (ce qu'écrit l'utilisateur dans la barre de recherche est compris dans les lettres du nom du restaurant)) 
-      (restaurant.name.includes(searchValue))) {
-
-
-      createCard(restaurant);
-  })
+    if ((restaurant.foodPrice === priceValue || priceValue === "All") && (restaurant.regim === regimValue || regimValue === "All") && (restaurant.style === styleValue || styleValue === "All") && (restaurant.name.includes(searchValue)))
+       {
+       createCard(restaurant);
+                               }})
 };
 
 render();
