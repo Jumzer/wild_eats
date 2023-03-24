@@ -24,7 +24,6 @@ function updateTitle(balise, texte) {
 }
 let searchValue = '';
 
-
 //------------Cards--------------------
 let priceValue = "All";
 let regimValue = "All";
@@ -62,7 +61,8 @@ const render = () => {
       (restaurant.name.includes(searchValue))) {
 
 
-      createCard(restaurant);
+      createCard(restaurant)
+
     }
   });
 }
@@ -149,16 +149,17 @@ function filterJunk() {
   render();
 }
 
+const launchSearchValue = (event) => {
+  section.innerHTML = ""
+  searchValue = event.target.value;
+  console.log(searchValue)
+  render();
+}
 
 //------------SearchBar--------------------
 const searchInput = document.getElementById('searchInput');
-searchInput.addEventListener('input', (event) => {
-  searchValue = event.target.value;
-  render();
-});
+searchInput.addEventListener('input', launchSearchValue);
 
 const searchInput2 = document.getElementById('searchInput2');
-searchInput.addEventListener('input', (event) => {
-  searchValue = event.target.value;
-  render();
-});
+searchInput2.addEventListener('input', launchSearchValue);
+
