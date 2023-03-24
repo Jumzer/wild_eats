@@ -1,138 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Wild Eats</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <title>Wild Eats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <!-- Header -->
-  <nav class="navHeader">
-    <img src="/assets/Logo_ss_txt_2.png" alt="logo Wild Eats" class="navLogo" />
-    <img src="/assets/Logo_2_ecriture.png" alt="Wild Eats Wording" class="navWordingImg" />
-    <ul class="navUl">
-      <li><button class="navButton">Home</button></li>
-      <li><button class="navButton">News</button></li>
-      <li><button class="navButton">Contact</button></li>
-      <li><button class="navButton">About</button></li>
-    </ul>
-  </nav>
+  <body>
+    <!-- Header -->
+    <nav class="navHeader">
+      <img
+        src="/assets/Logo_ss_txt_2.png"
+        alt="logo Wild Eats"
+        class="navLogo"
+      />
+      <img
+        src="/assets/Logo_2_ecriture.png"
+        alt="Wild Eats Wording"
+        class="navWordingImg"
+      />
+      <ul class="navUl">
+        <li><button class="navButton">Home</button></li>
+        <li><button class="navButton">News</button></li>
+        <li><button class="navButton">Contact</button></li>
+        <li><button class="navButton">About</button></li>
+      </ul>
+    </nav>
 
-  <!-- Section 1 : bannière -->
-  <section class="bannerSection">
-    <div class="searchBarAndBanner">
-      <div class="parentSearchBar2">
-        <div class="searchBarLoup">
-          <button type="button">
-            <img src="assets/loupe16px.png" alt="" class="loup" />
-          </button>
-          <input class="searchBar" placeholder="Trouve ton bonheur" type="text" />
-        </div>
-      </div>
-      <div class="parentSearchBar1">
-        <div class="searchBarDeux">
+    <!-- Section 1 : bannière -->
+    <section class="bannerSection">
+      <div class="searchBarAndBanner">
+        <div class="parentSearchBar2">
+
           <div class="searchBarLoup">
             <button type="button">
-              <img src="/assets/loupe16px.png" alt="" class="loup" />
+              <img src="assets/loupe16px.png" alt="" class="loup" />
             </button>
-            <input class="searchBar" placeholder="Trouve ton bonheur" type="text" id="searchInput" />
+            <input
+              class="searchBar"
+              placeholder="Trouve ton bonheur"
+              type="text"
+            />
           </div>
         </div>
-        <picture>
-          <source media="(max-width: 490px)" srcset="/assets/banniere_1_ss_nom.png" />
-          <source media="(min-width: 491px)" srcset="assets/banniere_1_vide.png" />
-          <img src="/assets/banniereWildEats.png" alt="photo de plats appétissants avec le logo Wild Eats"
-            class="banner" />
-        </picture>
+        <div class="parentSearchBar1">
+          <div class="searchBarDeux">
+            <div class="searchBarLoup">
+              <button type="button">
+                <img src="/assets/loupe16px.png" alt="" class="loup" />
+              </button>
+              <input
+                class="searchBar"
+                placeholder="Trouve ton bonheur"
+                type="text"
+                id="searchInput"
+              />
+            </div>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 490px)"
+              srcset="/assets/banner-with-words.png"
+            />
+            <source
+              media="(min-width: 491px)"
+              srcset="assets/banner-without-words.png"
+            />
+            <img
+              src="/assets/banniereWildEats.png"
+              alt="photo de plats appétissants avec le logo Wild Eats"
+              class="banner"
+            />
+          </picture>
+        </div>
       </div>
+      <div class="searchBarDeux"></div>
+    </section>
+    <!-- Section 2 : critères -->
+    <div class="selectors">
+      <ul class="selectors_menu">
+        <li class="scrolling_menu">
+          <img src="./assets/sigle_euro.png" alt="euro_icon" />
+          <p class="scrolling_menu_title" id="budget">Budget</p>
+          <p class="chevron">❯</p>
+
+          <ul class="sous-menu" id="priceValue">
+            <li class="food-price" onclick="filterPriceDefault()">Tous</li>
+            <li class="food-price" onclick="filterPrice10()">- de 10 €</li>
+            <li class="food-price" onclick="filterPrice1020()">10 - 20 €</li>
+            <li class="food-price" onclick="filterPrice20()">20 € et +</li>
+          </ul>
+        </li>
+        <li class="scrolling_menu">
+          <img src="./assets/sigle_carotte.png" alt="veggie_icon" />
+          <p class="scrolling_menu_title" id="regime">Régime</p>
+          <p class="chevron">❯</p>
+          <ul class="sous-menu">
+            <li class="food-price" onclick="filterRegimDefault()">Tous</li>
+            <li class="food-type" onclick="filterVegan()">Vegan</li>
+            <li class="food-type" onclick="filterCarne()">Carné</li>
+            <li class="food-type" onclick="filterGluten()">Gluten-free</li>
+          </ul>
+        </li>
+        <li class="scrolling_menu">
+          <img src="./assets/sigle_couverts.png" alt="fork_and_knife_icon" />
+          <p class="scrolling_menu_title" id="style">Style</p>
+          <p class="chevron">❯</p>
+          <ul class="sous-menu">
+            <li class="food-price" onclick="filterStyleDefault()">Tous</li>
+            <li class="food-country" onclick="filteritalian()">Italien</li>
+            <li class="food-country" onclick="filterJapan()">Japonais</li>
+            <li class="food-country" onclick="filterJunk()">Junk-food</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <div class="searchBarDeux"></div>
-  </section>
-  <!-- Section 2 : critères -->
-  <div class="selectors">
-    <ul class="selectors_menu">
-      <li class="scrolling_menu">
-        <img src="./assets/sigle_euro.png" alt="euro_icon" />
-        <p class="scrolling_menu_title" id="budget">Budget</p>
-        <p class="chevron">❯</p>
 
-        <ul class="sous-menu" id="priceValue">
-          <li class="food-price" onclick=filterPriceDefault()>
-            Tous
-          </li>
-          <li class="food-price" onclick=filterPrice10()>
-            - de 10 €
-          </li>
-          <li class="food-price" onclick=filterPrice1020()>
-            10 - 20 €
-          </li>
-          <li class="food-price" onclick=filterPrice20()>
-            20 € et +
-          </li>
-        </ul>
-      </li>
-      <li class="scrolling_menu">
-        <img src="./assets/sigle_carotte.png" alt="veggie_icon" />
-        <p class="scrolling_menu_title" id="regime">Régime</p>
-        <p class="chevron">❯</p>
-        <ul class="sous-menu">
-          <li class="food-price" onclick=filterRegimDefault()>
-            Tous
-          </li>
-          <li class="food-type" onclick=filterVegan()>
-            Vegan
-          </li>
-          <li class="food-type" onclick=filterCarne()>
-            Carné
-          </li>
-          <li class="food-type" onclick=filterGluten()>
+    <!-- Section 3 : cards -->
 
-            Gluten-free
-          </li>
-        </ul>
-      </li>
-      <li class="scrolling_menu">
-        <img src="./assets/sigle_couverts.png" alt="fork_and_knife_icon" />
-        <p class="scrolling_menu_title" id="style">Style</p>
-        <p class="chevron">❯</p>
-        <ul class="sous-menu">
-
-          <li class="food-price" onclick=filterStyleDefault()>
-            Tous
-          </li>
-          <li class="food-country" onclick=filteritalian()>
-            Italien
-          </li>
-          <li class="food-country" onclick=filterJapan()>
-            Japonais
-          </li>
-          <li class="food-country" onclick=filterJunk()>
-
-            Junk-food
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Section 3 : cards -->
-
-  <section class="cardSection" id="cardSection">
-    <!-- <div class="card">
+    <section class="cardSection" id="cardSection">
+      <!-- <div class="card">
         <img src="/assets/fastfood.jpg" alt="fastfood" style="width: 100%" />
         <div class="container">
           <h4><b>John Doe</b></h4>
           <p>Architect & Engineer</p>
           <div class="star-ratings-css" title=".375"></div>
         </div> -->
-    <!-- </div> -->
+      <!-- </div> -->
 
-    <!-- <div class="card">
+      <!-- <div class="card">
         <img src="/assets/italien.jpg" alt="italianfood" style="width: 100%" />
         <div class="container">
           <h4><b>John Doe</b></h4>
@@ -179,8 +179,31 @@
   </section>
 
   <!-- Section 4 : footer -->
+  <footer>
+    <ul class="mentions-legales">
+      <li><a href="" title="Venez rencontrer la team Wild Eats !">la Team</a></li>
+      <li><a href="" title="Pour avoir les dernières infos du Wild Eats !">Contact</a></li>
+    </ul>
+    <ul class="logos">
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
+          alt="logo instagram">
+      </li>
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+          alt="logo facebook">
+      </li>
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+          alt="logo twitter">
+      </li>
+    </ul>
+    <p>Tous droits réservés © Wild Eats</p>
+  </footer>
   <script src="/data.js"></script>
   <script src="./script.js"></script>
 </body>
-
 </html>
