@@ -4,6 +4,8 @@
 
 * {
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* ---------------------- header ---------------------- */
@@ -373,7 +375,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgb(249, 249, 246);
 }
 
 .card {
@@ -401,16 +402,15 @@ div > img {
 }
 
 .star-ratings-css {
-    unicode-bidi: bidi-override;
-    color: #c5c5c5;
-    font-size: 25px;
-    
-    width: 100px;
-    margin: 0 auto;
-    position: relative;
-    text-shadow: 0 1px 0 #a2a2a2;
-    padding-bottom: 15px;
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
 
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  text-shadow: 0 1px 0 #a2a2a2;
+  padding-bottom: 15px;
 }
 
 .star-ratings-css::before {
@@ -419,28 +419,27 @@ div > img {
 }
 
 [title=".125"]::after {
-    width: 12.5%;
+  width: 12.5%;
 }
 
 [title=".375"]::after {
-    width: 37.5%;
+  width: 37.5%;
 }
 
 [title=".125"]::after {
-    width: 12.5%;
+  width: 12.5%;
 }
 
 [title=".500"]::after {
-    width: 50%;
+  width: 50%;
 }
 
 [title=".625"]::after {
-    width: 62.5%;
+  width: 62.5%;
 }
 
 [title=".850"]::after {
-    width: 87.5%;
-
+  width: 87.5%;
 }
 
 .star-ratings-css::after {
@@ -459,15 +458,14 @@ div > img {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 body {
-    margin: 50px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    background: #f2fbff;
-    font-size: 0.6em;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
+  margin: 50px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background: #f2fbff;
+  font-size: 0.6em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -482,93 +480,85 @@ body {
 /* ---------------------- footer ---------------------- */
 
 footer {
-    width: 95%;
-    margin: auto;
-    background-color: #7ED957;
-    border-radius: 10px;
-    box-shadow: inset -27px -27px 54px #7ED957,
-        inset 27px 27px 54px #ffffff;
-    text-shadow: 1px 1px 2px grey;
-    margin-block-end: 0px;
-    padding: 0px;
-    margin-top: auto;
-    box-shadow: inset -27px -27px 54px #7ED957,
-        inset 27px 27px 54px #ffffff;
+  width: 95%;
+  margin: auto;
+  background-color: #7ed957;
+  border-radius: 10px;
+  box-shadow: inset -27px -27px 54px #7ed957, inset 27px 27px 54px #ffffff;
+  text-shadow: 1px 1px 2px grey;
+  margin-block-end: 0px;
+  padding: 0px;
+  margin-top: auto;
+  box-shadow: inset -27px -27px 54px #7ed957, inset 27px 27px 54px #ffffff;
 }
 
 .mentions-legales {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    margin-block-end: 0em;
-    margin-block-start: 0em;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 6px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
 }
 
 .logos {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding-bottom: 1em;
-    padding-top: 0px;
-    padding-inline-start: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    justify-content: center;
-    gap: 6px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  justify-content: center;
+  gap: 6px;
 }
 
 footer img {
-    width: 18px;
-    list-style-type: none;
-    padding: 0px;
-
+  width: 18px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 footer p {
-    font-size: 12px;
-    margin-top: 0px;
-    padding-bottom: 6px;
+  font-size: 12px;
+  margin-top: 0px;
+  padding-bottom: 6px;
 }
 
 footer a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 footer a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+@media screen and (min-width: 834px) {
+  footer {
+    margin-top: 24px;
+  }
 
-@media screen and (min-width:834px) {
-    footer {
-        margin-top: 24px;
-    }
+  footer p {
+    font-size: 18px;
+  }
 
-    footer p {
-        font-size: 18px;
-    }
+  .mentions-legales {
+    font-size: 24px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 12px;
+  }
 
-    .mentions-legales {
-        font-size: 24px;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-top: 12px;
-    }
-
-    footer img {
-        width: 36px;
-        list-style-type: none;
-        padding: 0px;
-
-    }
-
+  footer img {
+    width: 36px;
+    list-style-type: none;
+    padding: 0px;
+  }
 }
-
 
 /* ---------------------- footer ---------------------- */
-
