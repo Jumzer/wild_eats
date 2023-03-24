@@ -4,7 +4,7 @@ const restaurantList = [
     description: "Hamburgers, frites",
     imgSrc: "/assets/fastfood.jpg",
     imgAlt: "fastfood",
-    starRating: ".125",
+    starRating: ".375",
     foodPrice: "moins de 10 €",
     regim: "Carné",
     style: "Junk-food"
@@ -14,8 +14,8 @@ const restaurantList = [
     description: "Pizza à volonté",
     imgSrc: "/assets/italien.jpg",
     imgAlt: "italianfood",
-    starRating: ".125",
-    foodPrice: "Plus de 20 €",
+    starRating: "..500",
+    foodPrice: "de 10 à 20 €",
     regim: "Carné",
     style: "Italien"
   },
