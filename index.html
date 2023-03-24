@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Wild Eats</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -59,14 +60,18 @@
         <img src="./assets/sigle_euro.png" alt="euro_icon" />
         <p class="scrolling_menu_title" id="budget">Budget</p>
         <p class="chevron">❯</p>
-        <ul class="sous-menu">
-          <li class="food-price" onclick="updateTitle('budget', ' - de 10 €')" value="1">
+
+        <ul class="sous-menu" id="priceValue">
+          <li class="food-price" onclick=filterPriceDefault()>
+            Tous
+          </li>
+          <li class="food-price" onclick=filterPrice10()>
             - de 10 €
           </li>
-          <li class="food-price" onclick="updateTitle('budget', '10 - 20 €')" value="2">
+          <li class="food-price" onclick=filterPrice1020()>
             10 - 20 €
           </li>
-          <li class="food-price" onclick="updateTitle('budget', '20 € et +')" value="3">
+          <li class="food-price" onclick=filterPrice20()>
             20 € et +
           </li>
         </ul>
@@ -76,13 +81,17 @@
         <p class="scrolling_menu_title" id="regime">Régime</p>
         <p class="chevron">❯</p>
         <ul class="sous-menu">
-          <li class="food-type" onclick="updateTitle('regime', 'Vegan')">
+          <li class="food-price" onclick=filterRegimDefault()>
+            Tous
+          </li>
+          <li class="food-type" onclick=filterVegan()>
             Vegan
           </li>
-          <li class="food-type" onclick="updateTitle('regime', 'Carné')">
+          <li class="food-type" onclick=filterCarne()>
             Carné
           </li>
-          <li class="food-type" onclick="updateTitle('regime', 'Gluten-free')">
+          <li class="food-type" onclick=filterGluten()>
+
             Gluten-free
           </li>
         </ul>
@@ -92,13 +101,18 @@
         <p class="scrolling_menu_title" id="style">Style</p>
         <p class="chevron">❯</p>
         <ul class="sous-menu">
-          <li class="food-country" onclick="updateTitle('style', 'Italien')">
+
+          <li class="food-price" onclick=filterStyleDefault()>
+            Tous
+          </li>
+          <li class="food-country" onclick=filteritalian()>
             Italien
           </li>
-          <li class="food-country" onclick="updateTitle('style', 'Japonais')">
+          <li class="food-country" onclick=filterJapan()>
             Japonais
           </li>
-          <li class="food-country" onclick="updateTitle('style', 'Junk-food')">
+          <li class="food-country" onclick=filterJunk()>
+
             Junk-food
           </li>
         </ul>
