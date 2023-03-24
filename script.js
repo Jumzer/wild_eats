@@ -24,8 +24,9 @@ function updateTitle(balise, texte) {
 }
 
 //------------Cards--------------------
-
-let selectValue = "1";
+let priceValue = "All";
+let regimValue = "All";
+let styleValue = "All";
 
 const restaurant = restaurantList[0];
 const restaurants = restaurantList;
@@ -39,6 +40,8 @@ const createCard = (restaurant) => {
     <h4><b>${restaurant.name}</b></h4>
     <p>${restaurant.description}</p>
     <p> ${restaurant.foodPrice}</p>
+    <p> ${restaurant.regim}</p>
+    <p> ${restaurant.style}</p>
     <div class="star-ratings-css" title="${restaurant.starRating}"></div>
   </div>
 </div>`;
@@ -50,15 +53,89 @@ const createCard = (restaurant) => {
 const render = () => {
   section.innerHTML = "";
   restaurants.forEach((restaurant) => {
-    if (selectValue === restaurant.foodPrice || selectValue === "1") {
+    if ((restaurant.foodPrice === priceValue || priceValue === "All") && (restaurant.regim === regimValue || regimValue === "All") && (restaurant.style === styleValue || styleValue === "All"))
       createCard(restaurant);
-    }
-  });
+  })
 };
 
 render();
 
-function filter() {
-  selectValue = document.getElementsByClassName("food-price").value;
+// Filtres pour les prix
+
+function filterPriceDefault() {
+  priceValue = "All";
+  updateTitle('budget', 'Budget');
+  render()
+}
+
+function filterPrice10() {
+  priceValue = "moins de 10 €";
+  updateTitle('budget', ' - de 10 €')
+  render();
+}
+
+function filterPrice1020() {
+  priceValue = "de 10 à 20 €";
+  updateTitle('budget', '10 - 20 €')
+  render();
+}
+
+function filterPrice20() {
+  priceValue = "Plus de 20 €";
+  updateTitle('budget', '20 € et +')
+  render();
+}
+
+
+// Filtres pour les régimes
+
+function filterRegimDefault() {
+  regimValue = "All";
+  updateTitle('regime', 'Régime');
+  render()
+}
+
+function filterVegan() {
+  regimValue = "Vegan";
+  updateTitle('regime', 'Vegan');
+  render();
+}
+
+function filterCarne() {
+  regimValue = "Carné";
+  updateTitle('regime', 'Carné');
+  render();
+}
+
+function filterGluten() {
+  regimValue = "Gluten-free";
+  updateTitle('regime', 'Gluten-free');
+  render();
+}
+
+
+// Filtres pour les styles
+
+function filterStyleDefault() {
+  styleValue = "All";
+  updateTitle('style', 'Style');
+  render()
+}
+
+function filteritalian() {
+  styleValue = "Italien";
+  updateTitle('style', 'Italien');
+  render();
+}
+
+function filterJapan() {
+  styleValue = "Japonais";
+  updateTitle('style', 'Japonais');
+  render();
+}
+
+function filterJunk() {
+  styleValue = "Junk-food";
+  updateTitle('style', 'Junk-food');
   render();
 }

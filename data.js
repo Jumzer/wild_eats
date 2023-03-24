@@ -5,7 +5,9 @@ const restaurantList = [
     imgSrc: "/assets/fastfood.jpg",
     imgAlt: "fastfood",
     starRating: ".125",
-    foodPrice: "1",
+    foodPrice: "moins de 10 €",
+    regim: "Carné",
+    style: "Junk-food"
   },
   {
     name: "restaurant2",
@@ -13,7 +15,9 @@ const restaurantList = [
     imgSrc: "/assets/italien.jpg",
     imgAlt: "italianfood",
     starRating: ".125",
-    foodPrice: "2",
+    foodPrice: "de 10 à 20 €",
+    regim: "Carné",
+    style: "Italien"
   },
   {
     name: "restaurant3",
@@ -21,7 +25,9 @@ const restaurantList = [
     imgSrc: "assets/steakhouse.jpg",
     imgAlt: "meatfood",
     starRating: ".850",
-    foodPrice: "3",
+    foodPrice: "moins de 10 €",
+    regim: "Carné",
+    style: "Junk-food"
   },
   {
     name: "restaurant4",
@@ -29,7 +35,9 @@ const restaurantList = [
     imgSrc: "assets/veggie.jpg",
     imgAlt: "veggie",
     starRating: ".500",
-    foodPrice: "3",
+    foodPrice: "Plus de 20 €",
+    regim: "Carné",
+    style: "Junk-food"
   },
   {
     name: "restaurant5",
@@ -37,7 +45,9 @@ const restaurantList = [
     imgSrc: "assets/powke.jpg",
     imgAlt: "poke",
     starRating: ".620",
-    foodPrice: "3",
+    foodPrice: "de 10 à 20 €",
+    regim: "Gluten-free",
+    style: "Japonais"
   },
   {
     name: "restaurant6",
@@ -45,6 +55,8 @@ const restaurantList = [
     imgSrc: "assets/spaghetti.jpg",
     imgAlt: "spaghetti",
     starRating: ".375",
-    foodPrice: "3",
+    foodPrice: "moins de 10 €",
+    regim: "Vegan",
+    style: "Italien"
   },
 ];
