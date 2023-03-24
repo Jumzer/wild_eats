@@ -53,20 +53,18 @@ const createCard = (restaurant) => {
 };
 
 const render = () => {
-  console.log('hello');
   section.innerHTML = "";
   restaurants.forEach((restaurant) => {
 
-    if ((restaurant.foodPrice === priceValue || priceValue === "All") && (restaurant.regim === regimValue || regimValue === "All") && (restaurant.style === styleValue || styleValue === "All"))
-
-    if ((selectValue === restaurant.foodPrice || selectValue === "1") &&
+    if ((restaurant.foodPrice === priceValue || priceValue === "All") && (restaurant.regim === regimValue || regimValue === "All") && (restaurant.style === styleValue || styleValue === "All") &&
       // (ce qu'écrit l'utilisateur dans la barre de recherche est compris dans les lettres du nom du restaurant)) 
       (restaurant.name.includes(searchValue))) {
 
 
       createCard(restaurant);
-  })
-};
+    }
+  });
+}
 
 render();
 
@@ -158,3 +156,8 @@ searchInput.addEventListener('input', (event) => {
   render();
 });
 
+const searchInput2 = document.getElementById('searchInput2');
+searchInput.addEventListener('input', (event) => {
+  searchValue = event.target.value;
+  render();
+});
