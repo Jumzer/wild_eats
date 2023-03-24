@@ -22,13 +22,15 @@ function updateTitle(balise, texte) {
   // console.log(target);
   target.innerText = texte;
 }
+let searchValue = '';
+
 
 //------------Cards--------------------
 let priceValue = "All";
 let regimValue = "All";
 let styleValue = "All";
 
-const restaurant = restaurantList[0];
+// const restaurant = restaurantList[0];
 const restaurants = restaurantList;
 
 const section = document.getElementById("cardSection");
@@ -51,9 +53,17 @@ const createCard = (restaurant) => {
 };
 
 const render = () => {
+  console.log('hello');
   section.innerHTML = "";
   restaurants.forEach((restaurant) => {
+
     if ((restaurant.foodPrice === priceValue || priceValue === "All") && (restaurant.regim === regimValue || regimValue === "All") && (restaurant.style === styleValue || styleValue === "All"))
+
+    if ((selectValue === restaurant.foodPrice || selectValue === "1") &&
+      // (ce qu'écrit l'utilisateur dans la barre de recherche est compris dans les lettres du nom du restaurant)) 
+      (restaurant.name.includes(searchValue))) {
+
+
       createCard(restaurant);
   })
 };
@@ -139,3 +149,12 @@ function filterJunk() {
   updateTitle('style', 'Junk-food');
   render();
 }
+
+
+//------------SearchBar--------------------
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', (event) => {
+  searchValue = event.target.value;
+  render();
+});
+
